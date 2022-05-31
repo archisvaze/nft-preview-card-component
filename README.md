@@ -1,6 +1,6 @@
 # Frontend Mentor - NFT preview card component
 
-Live Site: 
+Live Site: https://nft-preview-card-component-5yp.pages.dev/
 
 - Semantic HTML5 markup
 - CSS custom properties
