@@ -1,0 +1,160 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 54%, 11%)
+}
+
+.card {
+    box-shadow: 0px 0px 15px 15px hsla(0, 0%, 0%, 0.20);
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(216, 50%, 17%);
+    width: 290px;
+    padding: 1.3em;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+.logo {
+    border-radius: 9px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    height: 290px;
+    width: 290px;
+    border-radius: 9px;
+}
+.logo:hover .overlay {
+    background-color: hsla(178, 100%, 50%, 0.37);
+    z-index: 100;
+   
+}
+.logo-img {
+    z-index: 50;
+    border-radius: 9px;
+    height: 290px;
+    width: 290px;
+    
+}
+
+.title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+   
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.text {
+    font-weight: 300;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 1.5em;
+    padding-bottom: 1.1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-img {
+    margin-bottom: -3.7px;
+    margin-right: 4px;
+    width: 10px;
+
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.daysleft-img {
+    margin-bottom: -3.7px;
+    margin-right: 4px;
+    width: 17px;
+}
+
+hr {
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 2px;
+}
+
+.profile {
+    display: flex;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+
+}
+
+.profilepic {
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    display: flex;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.profile-img {
+    width: 30px;
+}
+
+.creation {
+    margin-left: 17px;
+    margin-top: 7px;
+}
+
+.name {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 100%, 85%);
+}
