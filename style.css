@@ -1,39 +1,42 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: hsl(217, 54%, 11%)
+    background-color: hsl(217, 54%, 11%);
 }
 
 .card {
+    padding: 25px;
     box-shadow: 0px 0px 15px 15px hsla(0, 0%, 0%, 0.20);
     border-radius: 15px;
-    letter-spacing: 0.5px;
     color: hsl(215, 51%, 70%);
     background-color: hsl(216, 50%, 17%);
-    width: 290px;
-    padding: 1.3em;
+    width: 350px;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-
-
 .logo {
-    border-radius: 9px;
-    padding: 0;
-    margin: 0;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    transition: 0.4s;
+    margin-bottom: 25px;
 }
 
 .overlay {
@@ -42,30 +45,35 @@ body {
     align-items: center;
     position: absolute;
     z-index: 0;
-    height: 290px;
-    width: 290px;
-    border-radius: 9px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.4s;
 }
+
 .logo:hover .overlay {
     background-color: hsla(178, 100%, 50%, 0.37);
     z-index: 100;
-   
+
 }
+
 .logo-img {
     z-index: 50;
-    border-radius: 9px;
-    height: 290px;
-    width: 290px;
-    
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    transition: 0.4s;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer;
-   
+    margin-bottom: 25px;
+    transition: 0.4s;
+
 }
 
 .title:hover {
@@ -73,14 +81,14 @@ body {
 }
 
 .text {
-    font-weight: 300;
+    margin-bottom: 25px;
 }
 
 .description {
+    width: 100%;
     font-size: 14px;
     font-weight: 600;
-    padding-top: 1.5em;
-    padding-bottom: 1.1em;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
 }
@@ -102,10 +110,12 @@ body {
     width: 17px;
 }
 
-hr {
+.line {
     background-color: hsl(215, 32%, 27%);
     border: none;
     height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -113,9 +123,7 @@ hr {
     letter-spacing: 0.5px;
     font-size: 14px;
     font-weight: 400;
-    padding-top: 0.5em;
-    padding-bottom: 0.2em;
-
+    margin-bottom: 5px;
 }
 
 .profilepic {
@@ -140,21 +148,11 @@ hr {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    
+    transition: 0.4s;
+
 }
 
 .name:hover {
     color: hsl(178, 100%, 50%);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    display: inline-block;
-    position: absolute;
-    bottom: 10px;
-}
-
-.attribution a {
-    color: hsl(228, 100%, 85%);
-}
